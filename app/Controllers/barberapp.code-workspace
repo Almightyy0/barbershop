@@ -1,0 +1,19 @@
+{
+  "folders": [
+    {
+      "path": "../.."
+    },
+    {
+      "path": "../../../OneDrive/Desktop/Al_azhar"
+    },
+    {
+      "path": "../../../../../xampp/htdocs/abdurachmanbarbershop"
+    },
+    {
+      "path": "../../../Downloads/tailadmin-free-tailwind-dashboard-template-main"
+    }
+  ],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "tailadmin-free-tailwind-dashboard-template-main"
+  }
+}

@@ -1,0 +1,17 @@
+.card {
+    width: 350px;
+}
+
+.product {
+    height: 220px;
+}
+
+.card-groupp {
+    padding: 4rem;
+}
+@media (max-width: 768px) {
+
+    .card-groupp {
+        padding: 0px;
+    }
+}

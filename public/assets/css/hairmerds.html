@@ -1,0 +1,1008 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="keywords" content="HTML5 Template" />
+    <meta name="description" content="Hairnerds Studio">
+    <meta name="author" content="okler.net">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="porto/img/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="porto/img/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="porto/vendor/bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="porto/vendor/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="porto/vendor/owl.carousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="porto/vendor/owl.carousel/assets/owl.theme.default.min.css">
+
+
+    <title>Hairnerds Studio | It's Barbershop, It's Hair Salon</title>
+    <link rel="stylesheet" href="https://hairnerds.id/porto/css/custom.css">
+    <style>
+        .navbar {
+            padding: .5rem 0;
+            transition: none;
+            min-height: 12em;
+            background: transparent;
+            background-image: url("porto/img/bg/divider-4.png");
+            background-position: right bottom;
+            background-repeat: no-repeat;
+            background-size: cover;
+            z-index: 10;
+        }
+
+        .navbar-brand {
+            width: 10em;
+        }
+
+        .nav-link {
+            font-size: 1.12em;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .btn-auth {
+            border-radius: 1.7em;
+            padding: 8px 24px;
+            text-transform: uppercase;
+            background-color: rgba(238, 238, 238, .9);
+            font-weight: 600;
+        }
+
+        .btn-auth:hover {
+            background-color: rgba(238, 238, 238, .9);
+        }
+
+        .bg-footer {
+            background-color: #213545;
+            width: 100%;
+            height: 100%;
+            margin-top: -4em !important;
+        }
+
+        .footer-padding {
+            padding: 6em;
+        }
+
+        .form-control:focus.subscribe-form {
+            box-shadow: none;
+        }
+
+        .social-icons {
+            margin: 0;
+            padding: 0;
+            width: auto;
+        }
+
+        .social-icons li {
+            display: inline-block;
+            margin: -1px 1px 0 0;
+            padding: 0;
+            border-radius: 100%;
+            overflow: visible;
+        }
+
+        .social-icons li a {
+            transition: all 0.2s ease;
+            border-radius: 100%;
+            display: block;
+            height: 3.2rem;
+            line-height: 5;
+            width: 3.2rem;
+            text-align: center;
+            color: #333 !important;
+            text-decoration: none;
+            font-size: 12.8px;
+            font-size: 0.8rem;
+        }
+
+        .social-icons li:hover a {
+            background: #151719;
+            color: #FFF !important;
+        }
+
+        .social-icons li:hover.social-icons-instagram a {
+            background: #7c4a3a !important;
+        }
+
+        .social-icons li:hover.social-icons-youtube a {
+            background: #c3191e !important;
+        }
+
+        .social-icons li.social-icons-tiktok a {
+            line-height: 3.5;
+        }
+
+        .social-icons li:hover.social-icons-tiktok a {
+            background: #FE2C55 !important;
+        }
+
+        .social-icons.social-icons-icon-light li a i {
+            color: #FFF;
+            font-size: 2rem;
+        }
+
+        .footer-header-text {
+            color: #FFF;
+            margin: 1rem 0;
+            letter-spacing: 0.1em;
+        }
+
+        .footer-hours-title {
+            text-decoration: underline;
+        }
+
+        @media  only screen and (max-width: 1024px) {
+
+            .nav-auth {
+                margin-top: 2em !important;
+                margin-bottom: 4em !important;
+            }
+
+            .navbar-nav {
+                float: none;
+                margin: 0 auto;
+                display: block;
+                text-align: center;
+            }
+
+            .footer-location {
+                text-align: center !important;
+            }
+
+            .navbar-nav>li {
+                display: inline-block;
+                float: none;
+            }
+
+            .footer-maps {
+                margin-bottom: 2em;
+            }
+
+            .footer-hours {
+                margin-top: 3em;
+                text-align: center !important;
+            }
+        }
+
+        @media  only screen and (max-width: 768px) {
+
+            .footer-location {
+                text-align: center !important;
+            }
+
+            .footer-maps {
+                margin-bottom: 2em;
+            }
+
+            .footer-hours {
+                margin-top: 3em;
+                text-align: center !important;
+            }
+        }
+
+        @media  only screen and (max-width: 600px) {
+
+            .footer-location {
+                text-align: center !important;
+            }
+
+            .footer-maps {
+                margin-bottom: 2em;
+            }
+
+            .footer-hours {
+                margin-top: 3em;
+                text-align: center !important;
+            }
+        }
+    </style>
+    
+    
+    <meta name="facebook-domain-verification" content="mdmo4fpbea704w52d5mrzbydebgd5k" />
+    <script>
+        const _baseurl = 'https://hairnerds.id';
+        const _csrf = "y0klWZaZx3Y2fvCMjUzc3Dtzt9IpjtK21QPmbucf";
+        var imgError = function (image) {
+            image.onerror = "";
+            image.src = _baseurl + "/media/images/no-image-removebg.png";
+            return true;
+        }
+
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+        <div class="container mb-5">
+            <a class="navbar-brand" href="/">
+                <img src="porto/img/logos/logo.png" alt="Hairnerds Studio Logo" width="20%" class="img-fluid">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                <ul class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" target="_blank" href="https://academy.hairnerds.id/">Academy</a>
+                    <a class="nav-link" href="https://hairnerds.id/customer/booking">Book</a>
+                    <a class="nav-link" href="#ourservices">Services</a>
+                    <a class="nav-link" href="#ourteam">Hair Artist</a>
+                    <a class="nav-link" href="https://hairnerds.id/shop">Shop</a>
+                    <a class="nav-link" href="#aboutus">About Us</a>
+                    <a class="nav-link" href="#footer">Contact Us</a>
+                </ul>
+                <div class="navbar-nav ms-auto nav-auth">
+                                        <a href="https://hairnerds.id/auth?page=signup" class="btn btn-auth me-3">Sign Up</a>
+                    <a href="https://hairnerds.id/auth" class="btn btn-auth">Sign In</a>
+                                    </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <main>
+    <section id="hero" class="bg-hero vh-100"
+        style="background-image: url(https://hairnerds.id/porto/img/bg/bg-homepage-squad-color.png)">
+        <div class="position-relative z-index-3 h-100" style="max-width:95%; margin-top:-5em;">
+            <div class="row h-100">
+                <div class="d-flex align-items-center justify-items-center w-100 h-100">
+                    <div class="appear-animation" data-appear-animation="blurIn" data-appear-animation-delay="1000"
+                        data-plugin-options="{'minWindowWidth': 0}">
+                        <img src="porto/img/logos/hairnerds-new.png" alt="Hairnerds Logo" class="hero-logo">
+                    </div>
+                    <div id="carouselHero" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                        <div class="carousel-inner">
+                                                                                                                <div class="carousel-item active">
+                                <img class="d-block img-carousel" src="https://hairnerds.id/public/porto/img/barbers-head/DAVID.png" onerror="imgError(this);" alt="Barber">
+                            </div>
+                                                        <div class="carousel-item ">
+                                <img class="d-block img-carousel" src="https://hairnerds.id/public/porto/img/barbers-head/abay.png" onerror="imgError(this);" alt="Barber">
+                            </div>
+                                                        <div class="carousel-item ">
+                                <img class="d-block img-carousel" src="" data-src="https://hairnerds.id/public/porto/img/barbers-head/abe.png" onerror="imgError(this);" alt="Barber">
+                            </div>
+                                                        <div class="carousel-item ">
+                                <img class="d-block img-carousel" src="" data-src="https://hairnerds.id/public/porto/img/barbers-head/ade yusri.png" onerror="imgError(this);" alt="Barber">
+                            </div>
+                                                        <div class="carousel-item ">
+                                <img class="d-block img-carousel" src="" data-src="https://hairnerds.id/public/porto/img/barbers-head/aditya.png" onerror="imgError(this);" alt="Barber">
+                            </div>
+                                                        <div class="carousel-item ">
+                                <img class="d-block img-carousel" src="" data-src="https://hairnerds.id/public/porto/img/barbers-head/afies.png" onerror="imgError(this);" alt="Barber">
+                            </div>
+                                                        <div class="carousel-item ">
+                                <img class="d-block img-carousel" src="" data-src="https://hairnerds.id/public/porto/img/barbers-head/agung-compressed.png" onerror="imgError(this);" alt="Barber">
+                            </div>
+                                                        <div class="carousel-item ">
+                                <img class="d-block img-carousel" src="" data-src="https://hairnerds.id/public/porto/img/barbers-head/alam.png" onerror="imgError(this);" alt="Barber">
+                            </div>
+                                                        <div class="carousel-item ">
+                                <img class="d-block img-carousel" src="" data-src="https://hairnerds.id/public/porto/img/barbers-head/albasiths.png" onerror="imgError(this);" alt="Barber">
+                            </div>
+                                                        <div class="carousel-item ">
+                                <img class="d-block img-carousel" src="" data-src="https://hairnerds.id/public/porto/img/barbers-head/ali-compressed.png" onerror="imgError(this);" alt="Barber">
+                            </div>
+                                                        <div class="carousel-item ">
+                                <img class="d-block img-carousel" src="" data-src="https://hairnerds.id/public/porto/img/barbers-head/andri.png" onerror="imgError(this);" alt="Barber">
+                            </div>
+                                                        <div class="carousel-item ">
+                                <img class="d-block img-carousel" src="" data-src="https://hairnerds.id/public/porto/img/barbers-head/angga.png" onerror="imgError(this);" alt="Barber">
+                            </div>
+                                                        <div class="carousel-item ">
+                                <img class="d-block img-carousel" src="" data-src="https://hairnerds.id/public/porto/img/barbers-head/arief.png" onerror="imgError(this);" alt="Barber">
+                            </div>
+                                                        <div class="carousel-item ">
+                                <img class="d-block img-carousel" src="" data-src="https://hairnerds.id/public/porto/img/barbers-head/ashraf.png" onerror="imgError(this);" alt="Barber">
+                            </div>
+                                                        <div class="carousel-item ">
+                                <img class="d-block img-carousel" src="" data-src="https://hairnerds.id/public/porto/img/barbers-head/atam.png" onerror="imgError(this);" alt="Barber">
+                            </div>
+                                                        <div class="carousel-item ">
+                                <img class="d-block img-carousel" src="" data-src="https://hairnerds.id/public/porto/img/barbers-head/atta-compressed.png" onerror="imgError(this);" alt="Barber">
+                            </div>
+                                                        <div class="carousel-item ">
+                                <img class="d-block img-carousel" src="" data-src="https://hairnerds.id/public/porto/img/barbers-head/azril.png" onerror="imgError(this);" alt="Barber">
+                            </div>
+                                                        <div class="carousel-item ">
+                                <img class="d-block img-carousel" src="" data-src="https://hairnerds.id/public/porto/img/barbers-head/bagas.png" onerror="imgError(this);" alt="Barber">
+                            </div>
+                                                        <div class="carousel-item ">
+                                <img class="d-block img-carousel" src="" data-src="https://hairnerds.id/public/porto/img/barbers-head/beka.png" onerror="imgError(this);" alt="Barber">
+                            </div>
+                                                        <div class="carousel-item ">
+                                <img class="d-block img-carousel" src="" data-src="https://hairnerds.id/public/porto/img/barbers-head/denni.png" onerror="imgError(this);" alt="Barber">
+                            </div>
+                                                        <div class="carousel-item ">
+                                <img class="d-block img-carousel" src="" data-src="https://hairnerds.id/public/porto/img/barbers-head/doddy-compressed.png" onerror="imgError(this);" alt="Barber">
+                            </div>
+                                                        <div class="carousel-item ">
+                                <img class="d-block img-carousel" src="" data-src="https://hairnerds.id/public/porto/img/barbers-head/gunz.png" onerror="imgError(this);" alt="Barber">
+                            </div>
+                                                        <div class="carousel-item ">
+                                <img class="d-block img-carousel" src="" data-src="https://hairnerds.id/public/porto/img/barbers-head/hendra-compressed.png" onerror="imgError(this);" alt="Barber">
+                            </div>
+                                                        <div class="carousel-item ">
+                                <img class="d-block img-carousel" src="" data-src="https://hairnerds.id/public/porto/img/barbers-head/ikbal.png" onerror="imgError(this);" alt="Barber">
+                            </div>
+                                                        <div class="carousel-item ">
+                                <img class="d-block img-carousel" src="" data-src="https://hairnerds.id/public/porto/img/barbers-head/iman-tdj.png" onerror="imgError(this);" alt="Barber">
+                            </div>
+                                                        <div class="carousel-item ">
+                                <img class="d-block img-carousel" src="" data-src="https://hairnerds.id/public/porto/img/barbers-head/insan-compressed.png" onerror="imgError(this);" alt="Barber">
+                            </div>
+                                                        <div class="carousel-item ">
+                                <img class="d-block img-carousel" src="" data-src="https://hairnerds.id/public/porto/img/barbers-head/jule.png" onerror="imgError(this);" alt="Barber">
+                            </div>
+                                                        <div class="carousel-item ">
+                                <img class="d-block img-carousel" src="" data-src="https://hairnerds.id/public/porto/img/barbers-head/kim.png" onerror="imgError(this);" alt="Barber">
+                            </div>
+                                                        <div class="carousel-item ">
+                                <img class="d-block img-carousel" src="" data-src="https://hairnerds.id/public/porto/img/barbers-head/kum.png" onerror="imgError(this);" alt="Barber">
+                            </div>
+                                                        <div class="carousel-item ">
+                                <img class="d-block img-carousel" src="" data-src="https://hairnerds.id/public/porto/img/barbers-head/mbah.png" onerror="imgError(this);" alt="Barber">
+                            </div>
+                                                        <div class="carousel-item ">
+                                <img class="d-block img-carousel" src="" data-src="https://hairnerds.id/public/porto/img/barbers-head/nandho.png" onerror="imgError(this);" alt="Barber">
+                            </div>
+                                                        <div class="carousel-item ">
+                                <img class="d-block img-carousel" src="" data-src="https://hairnerds.id/public/porto/img/barbers-head/okky.png" onerror="imgError(this);" alt="Barber">
+                            </div>
+                                                        <div class="carousel-item ">
+                                <img class="d-block img-carousel" src="" data-src="https://hairnerds.id/public/porto/img/barbers-head/oong.png" onerror="imgError(this);" alt="Barber">
+                            </div>
+                                                        <div class="carousel-item ">
+                                <img class="d-block img-carousel" src="" data-src="https://hairnerds.id/public/porto/img/barbers-head/pandu.png" onerror="imgError(this);" alt="Barber">
+                            </div>
+                                                        <div class="carousel-item ">
+                                <img class="d-block img-carousel" src="" data-src="https://hairnerds.id/public/porto/img/barbers-head/patrick.png" onerror="imgError(this);" alt="Barber">
+                            </div>
+                                                        <div class="carousel-item ">
+                                <img class="d-block img-carousel" src="" data-src="https://hairnerds.id/public/porto/img/barbers-head/rama.png" onerror="imgError(this);" alt="Barber">
+                            </div>
+                                                    </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselHero"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselHero"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="booking text-center" style="">
+                    <a href="https://hairnerds.id/customer/booking" class="btn btn-book">Book</a>
+                </div>
+            </div>
+            <div class="position-absolute bottom-0 left-50pct transform3dx-n50">
+                <a href="#ourservices" data-hash data-hash-offset="68"
+                    class="d-block text-decoration-none text-color-light appear-animation"
+                    data-appear-animation="fadeIn" data-appear-animation-delay="3000"
+                    data-plugin-options="{'minWindowWidth': 0, 'forceAnimation': true, 'accY': 200}">
+                    <i class="icons icon-arrow-down p-events-none"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <img src="porto/img/bg/divider-1-noshadow.png" alt="" class="bg-divider-hero">
+    
+    <div id="ourservices">
+        <div class="container">
+            <div class="row mt-5 mb-5">
+                <div class="col text-center text-md-left">
+                    <div class="overflow-hidden">
+                        <h2 class="fw-bold fs-1 mb-3 text-center">SERVICES</h2>
+                        <p class="fs-4">Silahkan pilih servis sesuai dengan yang diinginkan dan silahkan pilih
+                            hair artis
+                            yang kalian pilih</p>
+                    </div>
+                    <div class="overflow-hidden mb-3">
+                        <p class="font-weight-semibold text-1 mb-0 appear-animation text-center" style="display:none"
+                            data-appear-animation="maskUp">BEING CONFIDENT IS THE KEY TO
+                            LIFE. DON'T BE AFRAID TO BE YOU! I'M SUPER DIFFERENT FROM A KIDS MY AGE WITH STYLE
+                            AND PERSONALITY, AND I'M OK WITH IT. AND IF YOU ARE OK WITH IT, EVERYONE ELSE WILL
+                            BE TOO.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center mb-4">
+                                <div class="col-md-3 text-center mb-md-5 appear-animation col-6" data-appear-animation="maskUp">
+                    <img data-src="https://hairnerds.id/porto/img/tools/coloring_1657493804.png" class="lazy mb-3 img-service lazy"
+                        alt="Coloring" loading="lazy" />
+                    <p class="px-4 text-2" style="display:none">Coloring</p>
+                </div>
+                                <div class="col-md-3 text-center mb-md-5 appear-animation col-6" data-appear-animation="maskUp">
+                    <img data-src="https://hairnerds.id/porto/img/tools/smoothing_1659377495.png" class="lazy mb-3 img-service lazy"
+                        alt="Other Services" loading="lazy" />
+                    <p class="px-4 text-2" style="display:none">Other Services</p>
+                </div>
+                                <div class="col-md-3 text-center mb-md-5 appear-animation col-6" data-appear-animation="maskUp">
+                    <img data-src="https://hairnerds.id/porto/img/tools/cukur_bayar_suka_suka_1673341960.png" class="lazy mb-3 img-service lazy"
+                        alt="Cukur Bayar Suka - Suka" loading="lazy" />
+                    <p class="px-4 text-2" style="display:none">Cukur Bayar Suka - Suka</p>
+                </div>
+                                <div class="col-md-3 text-center mb-md-5 appear-animation col-6" data-appear-animation="maskUp">
+                    <img data-src="https://hairnerds.id/porto/img/tools/haircut_1657493723.png" class="lazy mb-3 img-service lazy"
+                        alt="Haircut" loading="lazy" />
+                    <p class="px-4 text-2" style="display:none">Haircut</p>
+                </div>
+                                <div class="col-md-3 text-center mb-md-5 appear-animation col-6" data-appear-animation="maskUp">
+                    <img data-src="https://hairnerds.id/porto/img/tools/smoothing_1657522137.png" class="lazy mb-3 img-service lazy"
+                        alt="Smoothing" loading="lazy" />
+                    <p class="px-4 text-2" style="display:none">Smoothing</p>
+                </div>
+                                <div class="col-md-3 text-center mb-md-5 appear-animation col-6" data-appear-animation="maskUp">
+                    <img data-src="https://hairnerds.id/porto/img/tools/shaving_1657493978.png" class="lazy mb-3 img-service lazy"
+                        alt="Shaving" loading="lazy" />
+                    <p class="px-4 text-2" style="display:none">Shaving</p>
+                </div>
+                                <div class="col-md-3 text-center mb-md-5 appear-animation col-6" data-appear-animation="maskUp">
+                    <img data-src="https://hairnerds.id/porto/img/tools/hairnerds_delivery_1663150529.png" class="lazy mb-3 img-service lazy"
+                        alt="Hairnerds Delivery" loading="lazy" />
+                    <p class="px-4 text-2" style="display:none">Hairnerds Delivery</p>
+                </div>
+                                <div class="col-md-3 text-center mb-md-5 appear-animation col-6" data-appear-animation="maskUp">
+                    <img data-src="https://hairnerds.id/porto/img/tools/perm_1657493855.png" class="lazy mb-3 img-service lazy"
+                        alt="Perm" loading="lazy" />
+                    <p class="px-4 text-2" style="display:none">Perm</p>
+                </div>
+                            </div>
+        </div>
+    </div>
+    <img src="porto/img/bg/bg-tree-only.png" class="bg-tree" alt="">
+    <img src="porto/img/bg/divider-5.png" class="bg-divider-services" alt="">
+    <div class="bg-about d-flex" id="aboutus" style="background-image: url(https://hairnerds.id/porto/img/bg/bg-aboutus.png)">
+        <div class="container d-flex">
+            <div class="row">
+                <div class="col-lg-6 d-flex flex-column justify-content-center" id="about-wrapper">
+                    <h1 class="fw-bold fs-1">About Us</h1>
+                    <div style="line-height: 24px;">
+                        <p class="text-wrapping fw-semibold about-content">
+                            Hairnerds Studio terbentuk pada
+                            tahun 2017. <br>
+                            Hairnerds Studio merupakan tempat cukur rambut
+                            yang mempunyai konsep menggabungkan antara
+                            barbershop dan salon. Ini lah kami yang peduli dengan kualitas hasil potongan rambut
+                            untuk
+                            para customer kami. <br> Rambut adalah kanvas kami untuk membuat sebuah karya.</p>
+                    </div>
+                    <button class="btn btn-readmore" style="width: fit-content; display:none;">Read More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div loading="lazy" data-mc-src="69574d88-5e3b-46af-81db-73d6ba3bbad2#instagram"></div>
+    <div id="ourteam">
+        <div class="bg-divider-hairartist text-center d-flex flex-column justify-content-center align-items-center"
+            style="background-image: url('https://hairnerds.id/porto/img/bg/divider 2.png')">
+            <h1 class="fw-bold fs-1">Hair Artist</h1>
+            <p class="fw-semibold fs-4 hairartist-content">
+                Silahkan pilih servis sesuai dengan yang di inginkan dan silahkan pilih hair artis yang kalian
+                inginkan
+            </p>
+        </div>
+        <div id="carouselSquad" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://hairnerds.id/porto/img/store/kebayoran-squad-rev-1.webp" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://hairnerds.id/porto/img/store/pik-squad-rev-2.webp" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://hairnerds.id/porto/img/store/bandung-squad.webp" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselSquad" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselSquad" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="bg-divider-squad text-center d-flex flex-column justify-content-center align-items-center"
+        style="background-image: url(https://hairnerds.id/porto/img/bg/divider-4.png)">
+        <a href="https://hairnerds.id/customer/booking" class="btn btn-book-squad">Book</a>
+    </div>
+
+    <div class="bg-products" style="background-image: url(https://hairnerds.id/porto/img/bg/bg-clean.png)">
+        <div class="container py-5">
+            <div class="row mb-5 products-title">
+                <div class="col text-center text-md-left">
+                    <div class="overflow-hidden">
+                        <h2 class="fw-bold fs-1 mb-3 text-center">PRODUCTS</h2>
+                    </div>
+                    <div class="overflow-hidden mb-3">
+                        <p class="font-weight-semibold text-1 mb-0 appear-animation text-center" style="display:none"
+                            data-appear-animation="maskUp">BEING CONFIDENT IS THE KEY TO
+                            LIFE. DON'T BE AFRAID TO BE YOU! I'M SUPER DIFFERENT FROM A KIDS MY AGE WITH STYLE
+                            AND PERSONALITY, AND I'M OK WITH IT. AND IF YOU ARE OK WITH IT, EVERYONE ELSE WILL
+                            BE TOO.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center mb-4">
+                                <div class="col-md-3 text-center mb-md-5 appear-animation" data-appear-animation="maskUp">
+                    <img data-src="https://hairnerds.id/porto/img/products/product-thumbnails/thumb-1616216581_powder.png" class="mb-3 img-product lazy" alt="Hair Styling Powder" loading="lazy" />
+                    <p class="px-4 text-2" style="display:none">Hair Styling Powder</p>
+                </div>
+                                <div class="col-md-3 text-center mb-md-5 appear-animation" data-appear-animation="maskUp">
+                    <img data-src="https://hairnerds.id/porto/img/products/product-thumbnails/thumb-1616216692_paste.png" class="mb-3 img-product lazy" alt="Hair Paste" loading="lazy" />
+                    <p class="px-4 text-2" style="display:none">Hair Paste</p>
+                </div>
+                                <div class="col-md-3 text-center mb-md-5 appear-animation" data-appear-animation="maskUp">
+                    <img data-src="https://hairnerds.id/porto/img/products/product-thumbnails/thumb-1675063733_WB SCALE.png" class="mb-3 img-product lazy" alt="Waterbased Pomade" loading="lazy" />
+                    <p class="px-4 text-2" style="display:none">Waterbased Pomade</p>
+                </div>
+                            </div>
+            <div class="row justify-content-center pb-5">
+                <a href="https://hairnerds.id/shop" target="_blank" class="btn btn-shop">Shop Now</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-brands">
+        <div class="container py-5">
+            <div class="row my-5">
+                <div class="col text-center text-md-left">
+                    <div class="overflow-hidden">
+                        <h2 class="fw-bold mb-3 text-center" style="font-size: 3em;">BRANDS BEEN WORK WITH</h2>
+                        <p class="fs-4" style="display: none">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Atque voluptates
+                            debitis assumenda soluta voluptatum et dolor asperiores magni nostrum unde?</p>
+                    </div>
+                    <div class="overflow-hidden mb-3">
+                        <p class="font-weight-semibold text-1 mb-0 appear-animation text-center" style="display:none"
+                            data-appear-animation="maskUp">BEING CONFIDENT IS THE KEY TO
+                            LIFE. DON'T BE AFRAID TO BE YOU! I'M SUPER DIFFERENT FROM A KIDS MY AGE WITH STYLE
+                            AND PERSONALITY, AND I'M OK WITH IT. AND IF YOU ARE OK WITH IT, EVERYONE ELSE WILL
+                            BE TOO.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center mb-4">
+                                                         <div class="owl-carousel owl-theme mb-0"
+                            data-plugin-options="{'responsive': {'0': {'items': 1}, '476': {'items': 1}, '768': {'items': 3}, '992': {'items': 4}, '1200': {'items': 4}}, 'autoplay': true, 'autoplayTimeout': 3000, 'dots': false}">
+                                                                                                                <a href="https://fujishop.id/" target="_blank">
+                                <div style="margin:auto 80px; ">
+                                    <img class="img-fluid" src="porto/img/sponsors/Fujishopid-1615099164_fujishop-id-logo.png"
+                                        alt="Fujishopid-1615099164_fujishop-id-logo.png"
+                                        loading="lazy"
+                                        style="rigth:10px; margin-top: 50%; -ms-transform: translateY(-50%); transform: translateY(-50%);">
+                                </div>
+                            </a>
+                                                        <a href="http://clevelandcyclewerks.co.id/en/" target="_blank">
+                                <div style="margin:auto 80px; ">
+                                    <img class="img-fluid" src="porto/img/sponsors/Cleveland Cyclewerks Indonesia-1615099211_logocleveland.png"
+                                        alt="Cleveland Cyclewerks Indonesia-1615099211_logocleveland.png"
+                                        loading="lazy"
+                                        style="rigth:10px; margin-top: 50%; -ms-transform: translateY(-50%); transform: translateY(-50%);">
+                                </div>
+                            </a>
+                                                    </div>
+                </div>
+                <div class="row justify-content-center pb-5" style="display: none">
+                    <div class="input-group mb-3 form-email">
+                        <input type="text" class="form-control subscribe-form py-2 fs-5 input-email"
+                            placeholder="YOUR EMAIL" aria-label="YOUR EMAIL" aria-describedby="button-addon2">
+                        <button class="btn py-2 fs-5 btn-email" type="button" id="button-addon2">SEND</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="porto/img/bg/divider-5.png" alt="" class="bg-divider-brands">
+    </div>
+    <div id="contact-us">
+        <div class="container">
+            <div class="row mt-5 mb-5">
+                <div class="col text-center text-md-left">
+                    <div class="overflow-hidden">
+                        <h2 class="fw-bold fs-1 mb-3 text-center">CONTACT US</h2>
+                        <p class="fs-4">Adukan keluhkesah dan permasalahanmu pada kami, dengan senang hati kami
+                            mendengar keluhanmu</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center mb-4 contact-info">
+                <div class="contact-detail">
+                    <div class="store-name">
+                        <b>HAIRNERDS</b>
+                    </div>
+                    <div class="store-type">
+                        <b>Hair Salon</b>
+                    </div>
+                    <div>
+                        <div class="born">
+                            <span class="born__location">Jakarta Selatan</span>
+                            <span class="born__divider mx-3 opacity-3">|</span>
+                            <span class="born__year">EST 2017</span>
+                        </div>
+                    </div>
+                    <div class="contact-divider">
+                        <hr style="margin: 0 auto; height: 1px; background-color:#c29e75;">
+                    </div>
+                    <div class="address">
+                        <div class="address__full">
+                            KH. Ahmad Dahlan No. 6 <br>
+                            Kramat Pela - Kebayoran Baru <br>
+                            Jakarta 12130 - Indonesia
+                        </div>
+                        <div class="address__email">hairnerds.studio@gmail.com</div>
+                    </div>
+                    <div class="contact-divider">
+                        <hr style="margin: 0 auto; height: 1px; background-color:#c29e75;">
+                    </div>
+                    <div class="reservation">
+                        <span>Reservation ? <a href="https://hairnerds.id/customer/booking">BOOK NOW</a></span>
+                        <span class="phone">+6221-27517007</span>
+                    </div>
+                </div>
+                <form action="https://hairnerds.id/contact-us" method="post" class="contact-form">
+                    <input type="hidden" name="_token" value="y0klWZaZx3Y2fvCMjUzc3Dtzt9IpjtK21QPmbucf">                    <h3 class="text-center mb-4">Quality over Quantity</h3>
+                    <div class="alert contactus-alert alert-dismissible fade show d-none" role="alert">
+                        <span class="message">Email telah terkirim !</span>
+                        <button type="button" class="btn-close"></button>
+                    </div>
+                    <div class="row mt-4 mb-3">
+                        <div class="col-6">
+                            <input type="text" name="name" class="form-control py-2" placeholder="Type your name"
+                                required>
+                        </div>
+                        <div class="col-6">
+                            <input type="text" name="phone" class="form-control py-2" placeholder="Phone | Ex. 083XXX">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col">
+                            <input type="email" name="email" class="form-control py-2" placeholder="E-mail" required>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="form-group col">
+                            <textarea name="message" id="message" class="form-control" rows="8"
+                                placeholder="Type your message here ..." required></textarea>
+                        </div>
+                    </div>
+                    <div class="mt-4 d-flex justify-content-end">
+                        <button type="submit" class="btn btn-book-squad">
+                            <span>Send</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="adsModal" tabindex="-1" aria-labelledby="exampleModalLabel">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel"
+                        style="width: 100%">
+                        <div class="carousel-inner">
+                                                    </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="prev">
+                            <span class="shadow-lg bg-black rounded carousel-control-prev-icon"
+                                aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="next">
+                            <span class="shadow-lg bg-black rounded carousel-control-next-icon"
+                                aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+    </main>
+
+    <footer class="bg-footer" id="footer">
+        <div class="mx-3">
+            <div class="row footer-padding">
+                <div class="row py-5 justify-content-center">
+                    <div class="col-md-6 col-lg-8 footer-location">
+                        <h3 class="fw-bold fs-1 mb-3 text-light text-center">ADDRESS</h3>
+                        <div class="row">
+
+                            <div class="col-lg-6 col-xxl-6 footer-maps">
+                                <div class="w-100">
+                                    <ul class="list list-unstyled text-color-light fw-semibold fs-5 m-0 text-light">
+                                        <li>KH. Ahmad Dahlan No. 6</li>
+                                        <li>Kramat Pela - Kebayoran Baru</li>
+                                        <li>Jakarta 12130 - Indonesia</li>
+                                        <li>Telephone : +6221 27517007</li>
+                                        <li><a href="hairnerds.studio@gmail.com" class="text-light"
+                                                style="text-decoration: none">Email
+                                                :
+                                                hairnerds.studio@gmail.com</a></li>
+                                        <li>www.hairnerds.id</li>
+                                    </ul>
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d34600.60099605713!2d106.78266517393027!3d-6.2490087111899415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f11488bca27f%3A0x2dea983a0f2a47a8!2sHairnerds%20Studio!5e0!3m2!1sen!2sid!4v1611308330008!5m2!1sen!2sid"
+                                        width="80%" height="260px" frameborder="0" style="border:0; margin-top: 12px"
+                                        allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-xxl-6 footer-maps">
+                                <div class="w-100">
+                                    <ul class="list list-unstyled text-color-light fw-semibold fs-5 m-0 text-light">
+                                        <li>RUKO FRANKFURT, 2</li>
+                                        <li>Jl. Boulevard Raya Gading Serpong No.C/8, Kelapa Dua, Kecamatan Kelapa Dua</li>
+                                        <li>Kabupaten Tangerang, Banten 15810 - Indonesia</li>
+                                        <li>Telephone : +6221 59995740</li>
+                                        <li><a href="hairnerds.studio@gmail.com" class="text-light"
+                                                style="text-decoration: none">Email
+                                                :
+                                                hairnerds.studio@gmail.com</a></li>
+                                        <li>www.hairnerds.id</li>
+                                    </ul>
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15864.613947351825!2d106.619876!3d-6.2434939!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5a086d3b6e2b7059!2sHairnerds%20Studio%20Gading%20Serpong!5e0!3m2!1sen!2sid!4v1673273666313!5m2!1sen!2sid"
+                                        width="80%" height="260px" frameborder="0" style="border:0; margin-top: 12px"
+                                        allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-xxl-6 footer-maps">
+                                <div class="w-100">
+                                    <ul class="list list-unstyled text-color-light fw-semibold fs-5 m-0 text-light">
+                                        <li>Rukan Emerald Park No.26</li>
+                                        <li>Jl. Pantai Indah Kapuk, Kamal Muara</li>
+                                        <li>Jakarta Utara 14470 - Indonesia</li>
+                                        <li>Telephone : +6221 22570089</li>
+                                        <li><a href="hairnerds.studio@gmail.com" class="text-light"
+                                                style="text-decoration: none">Email
+                                                :
+                                                hairnerds.studio@gmail.com</a></li>
+                                        <li>www.hairnerds.id</li>
+                                    </ul>
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.1919626378813!2d106.73896301528461!3d-6.104833861577925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6a1dde6f543033%3A0x6a435157872ebc59!2sHairnerds%20Studio%20PIK%20(Pantai%20Indah%20Kapuk)!5e0!3m2!1sen!2sid!4v1658220477300!5m2!1sen!2sid"
+                                        width="80%" height="260px" frameborder="0" style="border:0; margin-top: 12px"
+                                        allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-xxl-6 footer-maps">
+                                <div class="w-100">
+                                    <ul class="list list-unstyled text-color-light fw-semibold fs-5 m-0 text-light">
+                                        <li>Jl. Tamansari No.42, Tamansari, Kec. Bandung Wetan</li>
+                                        <li>Bandung 40116 - Indonesia</li>
+                                        <li>Telephone : +62811-2160-042</li>
+                                        <li><a href="hairnerds.studio@gmail.com" class="text-light"
+                                                style="text-decoration: none">Email
+                                                :
+                                                hairnerds.studio@gmail.com</a></li>
+                                        <li>www.hairnerds.id</li>
+                                    </ul>
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d495.1134869531366!2d107.60856404844472!3d-6.901617694188167!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e7d8270ccf67%3A0xd20acf22d3d0d58d!2sHairnerds%20Studio%20Bandung!5e0!3m2!1sen!2sid!4v1667032320916!5m2!1sen!2sid"
+                                        width="80%" height="260px" frameborder="0" style="border:0; margin-top: 12px"
+                                        allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 col-lg-4 footer-hours">
+                        <h3 class="fw-bold fs-1 mb-3 text-light text-center">OPENING HOURS</h3>
+                        <div class="row">
+                            <div class="col-lg-3 col-xxl-6">
+                                <div class="w-100">
+                                    <h3 class="fw-bold fs-3 mb-3 text-light text-center footer-hours-title">Jakarta</h3>
+                                    <table class="table text-light table-borderless fw-semibold fs-5"
+                                        style="color:white">
+                                        <thead>
+                                            <tr style="display:none">
+                                                <th scope="col">days</th>
+                                                <th scope="col" style="width:10px">open</th>
+                                                <th scope="col" style="width:10px">-</th>
+                                                <th scope="col" style="width:10px">close</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row" style="width:170px; padding: 0 0 13px 0">Monday</th>
+                                                <td style="padding: 0 0 13px 0">10am</td>
+                                                <td style="padding: 0 13px"> - </td>
+                                                <td style="padding: 0 0 13px 0">9pm</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" style="padding: 0 0 13px 0">Tuesday</th>
+                                                <td style="padding: 0 0 13px 0">10am</td>
+                                                <td style="padding: 0 13px"> - </td>
+                                                <td style="padding: 0 0 13px 0">9pm</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" style="padding: 0 0 13px 0">Wednesday</th>
+                                                <td style="padding: 0 0 13px 0">10am</td>
+                                                <td style="padding: 0 13px"> - </td>
+                                                <td style="padding: 0 0 13px 0">9pm</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" style="padding: 0 0 13px 0">Thursday</th>
+                                                <td style="padding: 0 0 13px 0">10am</td>
+                                                <td style="padding: 0 13px"> - </td>
+                                                <td style="padding: 0 0 13px 0">9pm</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" style="padding: 0 0 13px 0">Friday</th>
+                                                <td style="padding: 0 0 13px 0">1pm</td>
+                                                <td style="padding: 0 13px"> - </td>
+                                                <td style="padding: 0 0 13px 0">9pm</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" style="padding: 0 0 13px 0">Saturday</th>
+                                                <td style="padding: 0 0 13px 0">10am</td>
+                                                <td style="padding: 0 13px"> - </td>
+                                                <td style="padding: 0 0 13px 0">9pm</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" style="padding: 0 0 13px 0">Sunday</th>
+                                                <td style="padding: 0 0 13px 0">10am</td>
+                                                <td style="padding: 0 13px"> - </td>
+                                                <td style="padding: 0 0 13px 0">9pm</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-xxl-6">
+                                <div class="w-100">
+                                    <h3 class="fw-bold fs-3 mb-3 text-light text-center footer-hours-title">Bandung</h3>
+                                    <table class="table text-light table-borderless fw-semibold fs-5"
+                                        style="color:white">
+                                        <thead>
+                                            <tr style="display:none">
+                                                <th scope="col">days</th>
+                                                <th scope="col" style="width:10px">open</th>
+                                                <th scope="col" style="width:10px">-</th>
+                                                <th scope="col" style="width:10px">close</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row" style="width:170px; padding: 0 0 13px 0">Monday</th>
+                                                <td style="padding: 0 0 13px 0">10am</td>
+                                                <td style="padding: 0 13px"> - </td>
+                                                <td style="padding: 0 0 13px 0">8pm</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" style="padding: 0 0 13px 0">Tuesday</th>
+                                                <td style="padding: 0 0 13px 0">10am</td>
+                                                <td style="padding: 0 13px"> - </td>
+                                                <td style="padding: 0 0 13px 0">8pm</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" style="padding: 0 0 13px 0">Wednesday</th>
+                                                <td style="padding: 0 0 13px 0">10am</td>
+                                                <td style="padding: 0 13px"> - </td>
+                                                <td style="padding: 0 0 13px 0">8pm</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" style="padding: 0 0 13px 0">Thursday</th>
+                                                <td style="padding: 0 0 13px 0">10am</td>
+                                                <td style="padding: 0 13px"> - </td>
+                                                <td style="padding: 0 0 13px 0">8pm</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" style="padding: 0 0 13px 0">Friday</th>
+                                                <td style="padding: 0 0 13px 0">10am</td>
+                                                <td style="padding: 0 13px"> - </td>
+                                                <td style="padding: 0 0 13px 0">8pm</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" style="padding: 0 0 13px 0">Saturday</th>
+                                                <td style="padding: 0 0 13px 0">10am</td>
+                                                <td style="padding: 0 13px"> - </td>
+                                                <td style="padding: 0 0 13px 0">8pm</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" style="padding: 0 0 13px 0">Sunday</th>
+                                                <td style="padding: 0 0 13px 0">10am</td>
+                                                <td style="padding: 0 13px"> - </td>
+                                                <td style="padding: 0 0 13px 0">8pm</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-dark" style="padding:20px !important">
+            <div class="container">
+                <div class="row py-5">
+                    <div class="col-12 text-center">
+                        <h2 class="footer-header-text">Our Socials</h2>
+                        <ul style="list-style: none"
+                            class="social-icons social-icons-clean social-icons-icon-light mb-2 d-flex justify-content-center">
+                            <li class="social-icons-instagram fs-2"><a
+                                    href="https://www.instagram.com/hairnerdsstudio/?hl=en" target="_blank"
+                                    title="Instagram"><i class="fab fa-instagram"></i></a></li>
+                            <li class="social-icons-youtube mx-3 fs-2"><a
+                                    href="https://www.youtube.com/channel/UCgnBWqn95RrEyOm268-XtIA" target="_blank"
+                                    title="Youtube"><i class="fab fa-youtube"></i></a></li>
+                            <li class="social-icons-tiktok fs-2">
+                                <a href="https://www.tiktok.com/@hairnerdsstudio?lang=en" target="_blank"
+                                    title="Tiktok">
+                                    <svg width="28" height="32" viewBox="0 0 28 32" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_301_2)">
+                                            <path
+                                                d="M27.9997 13.1194C25.2481 13.126 22.564 12.2678 20.3266 10.6663V21.8363C20.3258 23.9051 19.6935 25.9243 18.5141 27.6241C17.3348 29.3238 15.6646 30.6229 13.7269 31.3478C11.7893 32.0727 9.67651 32.1888 7.67111 31.6805C5.66572 31.1722 3.8633 30.0638 2.50486 28.5035C1.14642 26.9431 0.296715 25.0053 0.0693576 22.949C-0.157999 20.8927 0.247831 18.8161 1.23258 16.9967C2.21733 15.1773 3.73407 13.7019 5.57998 12.7677C7.42589 11.8336 9.51299 11.4853 11.5622 11.7694V17.3875C10.6245 17.0925 9.61753 17.1014 8.68516 17.4129C7.75279 17.7243 6.94267 18.3225 6.3705 19.1218C5.79833 19.9211 5.49336 20.8808 5.49915 21.8638C5.50494 22.8468 5.82119 23.8029 6.40274 24.5954C6.98429 25.3879 7.80139 25.9765 8.73737 26.2769C9.67334 26.5774 10.6803 26.5744 11.6145 26.2684C12.5487 25.9624 13.3623 25.3691 13.9391 24.5731C14.516 23.7772 14.8266 22.8193 14.8266 21.8363V0H20.3266C20.3228 0.464463 20.3617 0.928292 20.4428 1.38563C20.6339 2.40655 21.0313 3.37775 21.6107 4.23983C22.19 5.10191 22.9391 5.83674 23.8122 6.39937C25.0543 7.22068 26.5106 7.65844 27.9997 7.65812V13.1194Z"
+                                                fill="#F8F8F8" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_301_2">
+                                                <rect width="28" height="32" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 text-center">
+                        <p class="text-light fw-normal opacity-4 mb-0">Copyrights © 2023 All Rights
+                            Reserved by Hairnerds Studio</p>
+                        <p class="text-light fw-normal opacity-4 mb-0">Powered by PT. Gilang Josep
+                            Finansial Studio</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <script src="porto/vendor/bootstrap-5.2.0-beta1-dist/js/bootstrap.bundle.js"></script>
+    <script src="porto/vendor/jquery/jquery.min.js"></script>
+    <script src="https://hairnerds.id/porto/vendor/jquery.appear/jquery.appear.min.js"></script>
+    <script src="porto/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <!--(remove-empty-lines-end)-->
+
+    <!-- Theme Base, Components and Settings -->
+    <script src="porto/js/theme.js"></script>
+
+    <!-- Current Page Vendor and Views -->
+
+    <!-- Theme Initialization Files -->
+    <script src="porto/js/theme.init.js"></script>
+    <script>
+    $(document).ready(function () {
+            })
+
+</script>
+<script src="https://hairnerds.id/js/customer/landing.js?time=_1684070873"></script>
+<script src="https://cdn2.woxo.tech/a.js#632b0f1ce8ace618cad0634c" async data-usrc></script>
+</body>
+
+</html>

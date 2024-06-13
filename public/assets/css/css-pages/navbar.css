@@ -1,0 +1,15 @@
+@media (max-width: 768px) {
+
+    /* Gaya khusus untuk perangkat mobile */
+    .mobile_menu {
+        margin-top: -14px;
+    }
+
+    .brand {
+        display: none;
+    }
+
+    .justify-center {
+        margin-left: -50px;
+    }
+}
