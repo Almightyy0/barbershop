@@ -186,8 +186,9 @@
                 <input type="hidden" id="pelanggan-id" name="id-pelanggan" value="<?=session()->get('id_pelanggan');?>">
                 <input type="hidden" id="payment-input" name="payment" value="">
                 <input type="hidden" id="jadwal-id" name="jadwal-id" value="">
+                <input type="hidden" id="status" name="status" value="">
             </form>
-            <div class="w-full flex justify-center">
+            <div class="w-full flex justify-center ">
                 <button id="pay-button"
                     class="btn-md btn disabled:opacity-80 disabled:bg-green-600 disabled:text-white border border-gray-400 hover:border-gray-400 mt-8 hover:bg-green-500 active:bg-green-500 bg-green-600 text-white w-4/5 mb-4">
                     Pesan
@@ -208,18 +209,12 @@ document.getElementById('pay-button').onclick = function() {
             // Optional
             onSuccess: function(result) {
                 /* You may add your own js here, this is just example */
-                document.getElementById('result-json').innerHTML += JSON.stringify(result, null, 2);
+                let form = document.getElementById('form')
+                form.submit()
+                let paymentInput = document.getElementById('payment-input')
+                paymentInput.value = 'Transfer'
+
             },
-            // Optional
-            onPending: function(result) {
-                /* You may add your own js here, this is just example */
-                document.getElementById('result-json').innerHTML += JSON.stringify(result, null, 2);
-            },
-            // Optional
-            onError: function(result) {
-                /* You may add your own js here, this is just example */
-                document.getElementById('result-json').innerHTML += JSON.stringify(result, null, 2);
-            }
         });
     } else {
         let form = document.getElementById('form')
@@ -275,7 +270,9 @@ function changePayment(payment) {
     let paymentMethod = document.getElementById('payment-method')
     let paymentInput = document.getElementById('payment-input')
     paymentMethod.innerText = payment
+
     paymentInput.value = payment
+
     pembayaran.innerText = payment
     pembayaranConfirm.innerText = payment
     modal.classList.toggle('hidden')

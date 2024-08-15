@@ -8,6 +8,7 @@ class Pesanan extends BaseController
 {
     public function index($slug = false)
     {
+
         date_default_timezone_set('Asia/Makassar');
         $date = new Time();
         $currentDate = ($date->toDateTime());
@@ -94,6 +95,7 @@ class Pesanan extends BaseController
 
     public function pesananHandler()
     {
+
         $input = $this->request->getVar();
 
         $jadwal = $this->jadwalModel->getJadwalWhereId($input['jadwal-id'])->first();
@@ -120,6 +122,10 @@ class Pesanan extends BaseController
             'id_jadwal' => $input['jadwal-id'],
 
         ];
+        if ($input['payment'] == 'Transfer') {
+            $data['status_pembayaran'] = 'dibayar';
+        }
+
         $this->antreanModel->save($data);
         return redirect()->to(base_url('/success-trx'));
     }

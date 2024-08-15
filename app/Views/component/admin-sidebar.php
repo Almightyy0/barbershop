@@ -14,9 +14,9 @@
     <div class="text-gray-100 text-xl">
         <div class="p-2.5 mt-1 flex justify-between items-center gap-4">
             <div class="col-xl-4 flex justify-center gap-4 col-lg-2 col-md-3 items-center">
-                <div class="logo">
-                    <img src="<?=base_url(' assets/img/logo/logo.png')?>" class="w-16" alt="logo">
-                </div>
+                <img src="<?=base_url('assets/img/logo/logo.png')?>"
+                    class="w-16  <?=($title == 'Histori' || $title == 'Layanan' || $title == 'Barber' || $title == 'Jadwal' || $title == 'Transaksi') ? 'ms-24' : ''?>"
+                    alt="logo">
                 <h1 class="text-green-700 font-bold text-lg">Barbershop</h1>
             </div>
             <nav class="lg:hidden"> <i class="fa-solid fa-xmark mx-4 mt-2.5 cursor-pointer rouded" onClick="Open()"></i>
@@ -56,13 +56,6 @@
 
         </div>
     </a>
-    <a href="<?=base_url('admin/pelanggan');?>">
-        <div class="p-2.5 mt-3 flex items-center rounded-md px-4 mx-auto w-[98%] duration-300 <?=$title == 'Pelanggan' ? 'bg-green-700 ' : '';?>
-    cursor-pointer hover:bg-green-700 text-white">
-            <i class="fa-solid fa-users text-xl"></i>
-            <span class="text-[15x] ml-4 text-white">Pelanggan</span>
-
-        </div>
     </a>
     <a href="<?=base_url('admin/transaksi');?>">
         <div class="p-2.5 mt-3 flex items-center rounded-md px-4 mx-auto w-[98%] duration-300 <?=$title == 'Transaksi' ? 'bg-green-700 ' : '';?>
@@ -73,7 +66,7 @@
         </div>
     </a>
     <a href="<?=base_url('admin/profil');?>">
-        <div class="p-2.5 mt-3 flex items-center rounded-md px-4 mx-auto w-[98%] duration-300 <?=$title == 'Transaksi' ? 'bg-green-700 ' : '';?>
+        <div class="p-2.5 mt-3 flex items-center rounded-md px-4 mx-auto w-[98%] duration-300 <?=$title == 'Profil' ? 'bg-green-700 ' : '';?>
     cursor-pointer hover:bg-green-700 text-white">
             <i class="fa-solid text-xl fa-user"></i>
             <span class="text-[15x] ml-4 text-white">Profil</span>

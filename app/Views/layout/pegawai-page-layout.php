@@ -20,9 +20,10 @@
     <!-- Impor Bootstrap CSS -->
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
-    <?=($title == 'Histori') ? '<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    <?=($title == 'Histori' || $title = 'Dashboard' || $title = 'Jadwal' || $title = "Profil") ? '<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">' : ''?>
     <link rel="stylesheet" href="<?=base_url('assets/css/tailwind.css')?>">
+
 
 </head>
 
@@ -57,8 +58,8 @@
     }
 
     $(document).ready(function() {
-        var csrfName = '<?= csrf_token() ?>';
-        var csrfHash = '<?= csrf_hash() ?>';
+        var csrfName = '<?=csrf_token()?>';
+        var csrfHash = '<?=csrf_hash()?>';
 
         var table = $('#user-table').DataTable({
             "processing": true,
@@ -71,8 +72,8 @@
                     d[csrfName] = csrfHash;
                 },
                 "complete": function() {
-                    csrfName = '<?= csrf_token() ?>'; // Dapatkan CSRF token baru
-                    csrfHash = '<?= csrf_hash() ?>';
+                    csrfName = '<?=csrf_token()?>'; // Dapatkan CSRF token baru
+                    csrfHash = '<?=csrf_hash()?>';
                 }
             },
             "columnDefs": [{

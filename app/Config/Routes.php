@@ -9,10 +9,20 @@ $routes->group('admin', ['filter' => 'adminfilter'], function ($routes) {
     $routes->get('/', 'AdminDashboard::index');
     $routes->get('jadwal', 'AdminJadwal::index');
     $routes->post('jadwal-server', 'AdminJadwal::ajaxList');
+    $routes->post('tambah-jadwal', 'AdminJadwal::tambahJadwal');
+    $routes->post('edit-jadwal', 'AdminJadwal::editJadwal');
+    $routes->post('delete-jadwal', 'AdminJadwal::deleteJadwal');
     $routes->get('barber', 'AdminBarber::index');
+    $routes->post('barber-server', 'AdminBarber::ajaxList');
+    $routes->post('tambah-barber', 'AdminBarber::tambahBarber');
     $routes->get('layanan', 'AdminLayanan::index');
+    $routes->post('layanan-server', 'AdminLayanan::ajaxList');
+    $routes->post('tambah-layanan', 'AdminLayanan::tambahLayanan');
+    $routes->post('edit-layanan', 'AdminLayanan::editLayanan');
+    $routes->post('delete-layanan', 'AdminLayanan::deleteLayanan');
     $routes->get('pelanggan', 'AdminPelanggan::index');
     $routes->get('transaksi', 'AdminTransaksi::index');
+    $routes->post('transaksi-server', 'AdminTransaksi::ajaxList');
     $routes->get('profil', 'AdminProfil::index');
 
 });

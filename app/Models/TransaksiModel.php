@@ -27,6 +27,19 @@ class TransaksiModel extends Model
             ->orderBy('transaksi.id_transaksi', 'desc')
             ->findAll();
     }
+
+    public function getPenjualanPerBulan()
+    {
+        $builder = $this->db->table($this->table);
+        $builder->select("DATE_FORMAT(tanggal, '%Y-%m') AS bulan, SUM(total) AS total");
+        $builder->where('status', 'selesai');
+        $builder->where('tanggal >=', date('Y-m-d', strtotime('-12 months')));
+        $builder->groupBy("DATE_FORMAT(tanggal, '%Y-%m')");
+        $builder->orderBy("DATE_FORMAT(tanggal, '%Y-%m')");
+        $query = $builder->get();
+        return $query->getResultArray();
+        return $query->getResultArray();
+    }
     public function __construct(RequestInterface $request = null)
     {
         parent::__construct();

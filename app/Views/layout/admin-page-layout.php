@@ -9,10 +9,9 @@
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <link rel="stylesheet" href="<?=base_url('assets/css/tailwind.css')?> ">
     <link rel="stylesheet" href="<?=base_url('assets/icons/Font-Awesome/css/all.min.css')?>">
-    <?=($title == 'Histori' || $title == 'Layanan' || $title == 'Barber' || $title == 'Jadwal') ? '<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    <?=($title == 'Histori' || $title == 'Layanan' || $title == 'Barber' || $title == 'Jadwal' || $title == 'Transaksi') ? '<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">' : ''?>
     <link rel="stylesheet" href="<?=base_url('assets/css/tailwind.css')?>">
-
 </head>
 
 <body class="bg-gray-100">

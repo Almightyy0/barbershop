@@ -14,9 +14,7 @@
     <div class="text-gray-100 text-xl">
         <div class="p-2.5 mt-1 flex justify-between items-center gap-4">
             <div class="col-xl-4 flex justify-center gap-4 col-lg-2 col-md-3 items-center">
-                <div class="logo">
-                    <img src="<?=base_url(' assets/img/logo/logo.png')?>" class="w-16" alt="logo">
-                </div>
+                <img src="<?=base_url('assets/img/logo/logo.png')?>" class="w-16 ms-24" alt="logo">
                 <h1 class="text-green-700 font-bold text-lg">Barbershop</h1>
             </div>
             <nav class="lg:hidden"> <i class="fa-solid fa-xmark mx-4 mt-2.5 cursor-pointer rouded" onClick="Open()"></i>

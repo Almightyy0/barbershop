@@ -53,11 +53,11 @@ abstract class BaseController extends Controller
         $request = Services::request();
         parent::initController($request, $response, $logger);
         $this->adminModel = new \App\Models\AdminModel();
-        $this->barberModel = new \App\Models\BarberModel();
+        $this->barberModel = new \App\Models\BarberModel($request);
         $this->pelangganModel = new \App\Models\PelangganModel();
         $this->antreanModel = new \App\Models\AntreanModel();
         $this->jadwalModel = new \App\Models\JadwalModel($request);
-        $this->serviceModel = new \App\Models\ServiceModel();
+        $this->serviceModel = new \App\Models\ServiceModel($request);
         $this->accountModel = new \App\Models\AccountModel();
         $this->transaksiModel = new \App\Models\TransaksiModel($request);
 

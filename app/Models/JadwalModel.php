@@ -12,7 +12,7 @@ class JadwalModel extends Model
     protected $primaryKey = 'id_jadwal';
     protected $allowedFields = ['tgl_awal', 'tgl_akhir', 'id_barber', 'status'];
     protected $column_order = ['jadwal.id_jadwal'];
-    protected $column_search = ['jadwal.id_jadwal', 'jadwal.tgl_awal', 'jadwal.tgl_akhir', 'jadwal.id_status', 'jadwal.id_barber', 'barber.nama'];
+    protected $column_search = ['jadwal.id_jadwal', 'jadwal.tgl_awal', 'jadwal.tgl_akhir', 'jadwal.status', 'jadwal.id_barber', 'barber.nama'];
     protected $order = ['jadwal.id_jadwal' => 'desc'];
     protected $request;
     protected $db;
@@ -84,8 +84,6 @@ class JadwalModel extends Model
     {
         $this->dt->select('jadwal.*, barber.nama AS nama_barber');
         $this->dt->join('barber', 'barber.id_barber = jadwal.id_barber');
-        $this->dt->join('pelanggan', 'pelanggan.id_pelanggan = jadwal.id_pelanggan');
-        $this->dt->join('layanan', 'layanan.id_layanan = jadwal.id_layanan');
 
         $i = 0;
         foreach ($this->column_search as $item) {

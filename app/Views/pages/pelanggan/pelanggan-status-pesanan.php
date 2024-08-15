@@ -230,7 +230,7 @@ function modalDelete(id = '', idPelanggan = '', idBarber = '', total = '') {
 
 setTimeout(() => {
     let element = document.getElementById('alert');
-    console.log(element);
+
     if (element) {
         element.classList.remove('opacity-100');
         element.classList.add('opacity-0');
